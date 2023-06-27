@@ -1,0 +1,42 @@
+.header {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(115deg, #f2f2f2da, #f1f1f1ce) ,url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1NClgRJCW3nlXPTtmnLZRM6BbBee5CcxeyKZrcqlUn8DLawwa-sa4Setm4bGJwWvrEo&usqp=CAU');
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 100px;
+}
+
+.p-tags:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 15px !important;
+  border-radius: 5px;
+  background: #0af030b7;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+  border: 4px solid #0af030b7;
+}

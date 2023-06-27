@@ -1,0 +1,53 @@
+
+.edit {
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px #000;
+  width:450px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  gap: 10px;
+}
+
+.money {
+  padding: 8px;
+  margin-right: 5px;
+  border: none;
+  border-bottom: 2px solid #000;
+  /* border-bottom: 5px; */
+}
+
+.two-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  /* margin: 0 auto; */
+  /* width: 180px; */
+}
+
+.bot {
+  width: 70px;
+  cursor: pointer;
+  padding: 10px;
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  border-radius: 15px;
+  border: none;
+  background-color: #0af030b7;
+  box-shadow: 3px 2px 5px #333232;
+}
+
+.cancel {
+  color: red;
+  box-shadow: 3px 2px 5px #333232;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+}
