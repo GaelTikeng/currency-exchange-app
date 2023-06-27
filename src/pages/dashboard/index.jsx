@@ -12,6 +12,7 @@ export default function DashBoard () {
   const [isEdit, setIsEdit] = useState(false);
   // const {userCurrency} =  useContext(Context);
   const userInfo = JSON.parse(localStorage.getItem('currencyUser'));
+  const money = JSON.parse(localStorage.getItem('money'));
 
   const handleClick = () => {
     setIsEdit(!isEdit);
@@ -26,9 +27,9 @@ export default function DashBoard () {
           <h2>{userInfo.firstName}'s wallet </h2>
           <hr></hr>
           <h2 >Balance</h2>
-          <p>USD balance : <b>USD</b> </p>
-          <p>EUR balance : <b>EUR</b></p>
-          <p>XAF balance : <b>XAF</b></p>
+          <p>USD balance : <b>{money.UsdBalance} USD</b> </p>
+          <p>EUR balance : <b>{money.EurBalance} EUR</b></p>
+          <p>XAF balance : <b>{money.XafBalance} XAF</b></p>
           {isEdit && <Popup
             content = {<>
               <EditAccount/>
