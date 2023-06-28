@@ -28,7 +28,6 @@ export default function EditAccount () {
 
   const handleSave = (e) => {
     e.preventDefault();
-    console.log(usd);
   }
   return (
     <div className="edit">
@@ -36,7 +35,7 @@ export default function EditAccount () {
       <hr></hr>
       <Formik
         initialValues = {{
-          UsdBalance: '',
+          UsdBalance:'',
           EurBalance:'',
           XafBalance:'',
         }}

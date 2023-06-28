@@ -16,7 +16,7 @@ export default function LoginForm() {
     event.preventDefault();
     console.log(user.password);
     console.log(user);
-    if (username == userName) {
+    if (username == userName && passWord == user.password) {
       setIsSumitting(true);
       navigate('./dashboard');
     } else {

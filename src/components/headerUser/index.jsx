@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FiLogOut } from "react-icons/fi";
 import './headerUser.css'; 
 
 
@@ -24,12 +25,16 @@ export default function UserHeader () {
         <p className="p-tags">Market</p>
         <p className="p-tags">Contact</p>
         <p className="user">{userInfo.firstName} </p>
-        <button
+        <FiLogOut
+          className="icon-fi"
+          onClick={handleClick}
+        />
+        {/* <button
           className="btn"
           onClick={handleClick}
         >
           Logout
-        </button>
+        </button> */}
       </div>
     </div>
   )
