@@ -56,7 +56,7 @@ export default function HeroSection() {
         <article>
           <h1>HOW IT WORK</h1>
           <p>
-            Cexchange is a currency app that can exchange between Dollars, Euro and XAF. Cexchange can handle 3 currencies and exchange them within each other.
+            C-exchange is a currency app that can exchange between Dollars, Euro and XAF. Cexchange can handle 3 currencies and exchange them within each other.
             E.g. John Doe's wallet (Default currency = USD)
           
             USD balance: 100 USD 

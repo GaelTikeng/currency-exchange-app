@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Popup from "../popup";
 import LoginForm from "../login/login";
 import './header.css';
+import Popup from "../popup";
 
 
 
@@ -14,7 +14,7 @@ export default function Header () {
 
   return (
     <div className="header">
-      <h2 className="logo">Cexchange</h2>
+      <h2 className="logo">C-exchange</h2>
       <div className="info">
         <p className="p-tags">About</p>
         <p className="p-tags">Market</p>
