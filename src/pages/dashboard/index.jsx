@@ -21,8 +21,7 @@ export default function DashBoard () {
   const [eur, setEur] = useState(money.EurBalance);
   const [xaf, setXaf] = useState(money.XafBalance);
   const userInfo = JSON.parse(localStorage.getItem('currencyUser'));
-  
-  let res = 0;
+
   const getCurrency = () => {
     const url = "https://api.currencyapi.com/v3/latest?apikey=0Sf1rTsrRudBO39VADHO1Ro3f4CsLoIAAAcwjBdd"
 
@@ -41,20 +40,19 @@ export default function DashBoard () {
 
   const handleClick = () => {
     setIsEdit(!isEdit);
-    console.log("fetched data", currency.data)
   }
 
   const handleConvert = () => {
-    if (currency1 != "" && currency2 != "") {
-      if (currency1 == 'EUR' && currency2 == "USD") {
+    if (currency1 !== "" && currency2 !== "") {
+      if (currency1 === 'EUR' && currency2 === 'USD') {
         console.log('second condition')
         setUsd ((eur / currency.data.EUR.value + usd).toFixed(2));
         setEur('0.00');
-      } else if (currency1 == 'EUR' && currency2 == 'XAF') {
+      } else if (currency1 === 'EUR' && currency2 === 'XAF') {
         setXaf((eur * 650 + xaf).toFixed(2));
         setEur('0.00');
         console.log('XAF conversion')
-      } else if (currency1 == 'USD' && currency2 == 'EUR') {
+      } else if (currency1 === 'USD' && currency2 === 'EUR') {
         setEur((usd * currency.data.EUR.value + eur).toFixed(2));
         setUsd('0.00');
       } else if (currency1 === 'XAF' && currency2 === 'EUR') {

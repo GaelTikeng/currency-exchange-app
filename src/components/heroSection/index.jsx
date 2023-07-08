@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import ReactModal from "react-modal";
 import Header from "../header";
 import SignupForm from "../signup";
 import Popup from "../popup";
-import { IconName, FaWallet } from "react-icons/fa";
 import "./hero.css";
 
 export default function HeroSection() {
@@ -50,6 +48,7 @@ export default function HeroSection() {
         <img
           className="image"
           src="https://img.freepik.com/free-photo/cheerful-young-asian-woman-holding-money-showing-display-phone_171337-8788.jpg"
+          alt="young lady with phone and money"
         />
       </div>
       <div id="learn-more">

@@ -4,21 +4,18 @@ import { FaUser } from "react-icons/fa";
 import "./login.css";
 
 export default function LoginForm() {
-  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
   const [passWord, setPassWord] = useState("");
   const [isSumitting, setIsSumitting] = useState(false);
   const [isUser, setIsUser] = useState(false);
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("currencyUser"));
-  const username = user.firstName + user.lastName;
 
   const handleClick = (event) => {
     event.preventDefault();
-    console.log(user.password);
-    console.log(user);
-    if (username == userName && passWord == user.password) {
+    if (user.email === email) {
       setIsSumitting(true);
-      navigate('./dashboard');
+      navigate("./dashboard");
     } else {
       setIsUser(true);
     }
@@ -30,15 +27,15 @@ export default function LoginForm() {
       <h3>Login</h3>
       <hr></hr>
       <form className="form">
-        <lable for="name">Username</lable>
+        <lable for="name">Email address</lable>
         <input
           type="text"
-          placeholder="Ente username"
+          placeholder="Enter Email"
           className="input"
           name="username"
-          value={userName}
+          value={email}
           onChange={(event) => {
-            setUserName(event.target.value);
+            setEmail(event.target.value);
           }}
           required
         />
@@ -59,7 +56,7 @@ export default function LoginForm() {
         </lable>
         {isSumitting ? (
           <p style={{ color: "Green", fontStyle: "italic" }}>
-            Welcome {userName}
+            Successfully login
           </p>
         ) : (
           ""
