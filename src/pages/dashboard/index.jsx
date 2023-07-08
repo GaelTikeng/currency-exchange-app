@@ -1,12 +1,8 @@
-import React, { createContext, useContext } from "react";
 import { useState, useEffect } from "react";
 import UserHeader from "../../components/headerUser";
 import './dashboard.css';
 import EditAccount  from "../../components/editAccount/indext";
 import Popup from "../../components/popup";
-import { Context } from "../../utiles/context/context";
-import { useNavigate } from "react-router-dom";
-
 
 export default function DashBoard () {
   const [isEdit, setIsEdit] = useState(false);
@@ -16,7 +12,6 @@ export default function DashBoard () {
   const [totalUsd, setTotalUsd] = useState(0)
   const [totalEur, setTotalEur] = useState(0)
   const [totalXaf, setTotalXaf] = useState(0)
-
   const [currency, setCurrency] = useState({});
   const [currency1, setCurrency1] = useState('');
   const [currency2, setCurrency2] = useState('');
@@ -25,14 +20,11 @@ export default function DashBoard () {
   const [usd, setUsd] = useState(money.UsdBalance);
   const [eur, setEur] = useState(money.EurBalance);
   const [xaf, setXaf] = useState(money.XafBalance);
-  // const {userCurrency} =  useContext(Context);
   const userInfo = JSON.parse(localStorage.getItem('currencyUser'));
   
   let res = 0;
   const getCurrency = () => {
     const url = "https://api.currencyapi.com/v3/latest?apikey=0Sf1rTsrRudBO39VADHO1Ro3f4CsLoIAAAcwjBdd"
-
-    // const url = "http://data.fixer.io/api/latest?access_key=cb1ba0a89400455bef300779f0f2c464&format=1&_gl=1*1hxkb1x*_ga*MTQzNjI5Mzc5OC4xNjg3NTAyNDE1*_ga_HGV43FGGVM*MTY4NzkwNDE0OC43LjEuMTY4NzkwNDI3My4zLjAuMA.."
 
     fetch(url)
       .then ((response) => {
@@ -41,13 +33,11 @@ export default function DashBoard () {
       .then (data => {
         setCurrency(data)
       })
-
   }
 
   // useEffect (() => {
   //   getCurrency();
   // }, [])
-
 
   const handleClick = () => {
     setIsEdit(!isEdit);
@@ -74,12 +64,10 @@ export default function DashBoard () {
         setUsd((xaf / currency.data.XAF.value + usd).toFixed(2));
         setXaf('0.00');
       } else if (currency1 === 'USD' && currency2 === 'XAF') {
-        // res = usd * currency.rates.XAF;
         setXaf((usd * currency.data.XAF.value + xaf).toFixed(2));
         setUsd('0.00');
       }
     }
-
   }
 
   const handleChange1 = (money1) => {
@@ -109,7 +97,6 @@ export default function DashBoard () {
     }
   }
 
-
   return (
     <div>
       <UserHeader/>
@@ -137,7 +124,6 @@ export default function DashBoard () {
           >
             Edit balance
           </button>
-          
         </div>
         <div>
             <h3>Convert your currency</h3>
@@ -181,8 +167,6 @@ export default function DashBoard () {
             </button>
           </div>
       </div>
-      
-      
     </div>
   );
 }

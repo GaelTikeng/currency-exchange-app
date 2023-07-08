@@ -40,9 +40,9 @@ export default function HeroSection() {
           )}
           <div className="two-bottons">
             <button className="botun" onClick={togglePopup}>
-              Sign up now
+              Get started
             </button>
-            <button onClick={handleClick} className="botton">
+            <button onClick={handleClick} className="botton-learn-more">
               <a href="#learn-more">Learn more</a>
             </button>
           </div>
