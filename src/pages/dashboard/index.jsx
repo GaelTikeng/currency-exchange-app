@@ -34,9 +34,9 @@ export default function DashBoard () {
       })
   }
 
-  // useEffect (() => {
-  //   getCurrency();
-  // }, [])
+  useEffect (() => {
+    getCurrency();
+  }, [])
 
   const handleClick = () => {
     setIsEdit(!isEdit);
@@ -81,7 +81,7 @@ export default function DashBoard () {
   }
 
   const handleTotalValue = () => {
-    if (totalValue != '') {
+    if (totalValue !== '') {
       if (totalValue === 'USD') {
         setTotalUsd((eur / currency.data.EUR.value + xaf / currency.data.XAF.value + usd).toFixed(2));
         setIsUsd(true);

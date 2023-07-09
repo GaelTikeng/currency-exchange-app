@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Form } from "formik";
 import { MyTextInput } from "../signup";
+import * as Yup from 'yup';
 import "./editAccount.css";
 
 export default function EditAccount() {
@@ -10,7 +11,7 @@ export default function EditAccount() {
 
   };
 
-  const handleCancel = () => {
+  const handleCancel = (e) => {
 
   }
 
@@ -24,6 +25,15 @@ export default function EditAccount() {
           EurBalance: "",
           XafBalance: "",
         }}
+        validationSchema={Yup.object({
+          UsdBalance: Yup.number()
+            .min(1, 'Enter an amount')
+            .required(),
+          EurBalance: Yup.number()
+            .min(20, 'Enter an amount'),
+          XafBalance: Yup.number()
+            .min(1, 'Enter an amount')
+        })}
         onSubmit={(money, { setSubmitting }) => {
           setTimeout(() => {
             localStorage.setItem("money", JSON.stringify(money));

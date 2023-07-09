@@ -50,6 +50,7 @@ export default function SignupForm () {
           firstName: '',
           lastName: '',
           email: '',
+          password: '',
           acceptedTerms: false, // added for our checkbox
         }}
         validationSchema={Yup.object({
