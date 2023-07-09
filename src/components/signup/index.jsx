@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 import './signUp.css'
@@ -35,11 +34,10 @@ const MyCheckbox = ({ children, ...props }) => {
 // And now we can use these
 export default function SignupForm () {
 
-  const [user, setUser] = useState({});
 
-  const handleClick = () => {
-    console.log(user.firstName);
-  }
+  // const handleClick = () => {
+  //   // console.log(user.firstName);
+  // }
 
   return (
     <div className='backgroundStyle'>
@@ -114,7 +112,7 @@ export default function SignupForm () {
 
           <button
             type="submit"
-            onClick={handleClick}
+            // onClick={handleClick}
             className='submit'
           >
             Submit

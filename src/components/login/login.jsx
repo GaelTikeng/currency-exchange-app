@@ -27,7 +27,7 @@ export default function LoginForm() {
       <h3>Login</h3>
       <hr></hr>
       <form className="form">
-        <lable for="name">Email address</lable>
+        <lable for="name">Email address </lable>
         <input
           type="text"
           placeholder="Enter Email"

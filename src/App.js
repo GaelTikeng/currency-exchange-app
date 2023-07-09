@@ -6,7 +6,6 @@ import { ContextProvider } from './utiles/context/context';
 import './App.css';
 
 function App() {
-  const userCurrency = JSON.parse(localStorage.getItem("UserCurrency"));
   return (
     <div className="App">
       <ContextProvider>
