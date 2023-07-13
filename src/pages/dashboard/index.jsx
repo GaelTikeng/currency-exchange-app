@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import UserHeader from "../../components/headerUser";
-import './dashboard.css';
+import "./dashboard.css";
 import EditAccount  from "../../components/editAccount/indext";
 import Popup from "../../components/popup";
 
