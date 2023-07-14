@@ -11,9 +11,9 @@ export default function EditAccount() {
 
   };
 
-  const handleCancel = (e) => {
+  // const handleCancel = (e) => {
 
-  }
+  // }
 
   return (
     <div className="edit">
@@ -64,7 +64,7 @@ export default function EditAccount() {
             placeholder="Amount in xaf"
           />
           <div className="two-buttons">
-            <button onClick={handleCancel} className="bot">Save</button>
+            <button className="bot">Save</button>
             <button onClick={handleSave} className="cancel">
               cancel
             </button>
