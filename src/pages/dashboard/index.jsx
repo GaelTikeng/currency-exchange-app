@@ -34,9 +34,9 @@ export default function DashBoard () {
       })
   }
 
-  // useEffect (() => {
-  //   getCurrency();
-  // }, [])
+  useEffect (() => {
+    getCurrency();
+  }, [])
 
   const handleClick = () => {
     setIsEdit(!isEdit);
