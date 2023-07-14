@@ -16,7 +16,7 @@ export default function DashBoard () {
   const [currency1, setCurrency1] = useState('');
   const [currency2, setCurrency2] = useState('');
   const [totalValue, setTotalValue] = useState('');
-  const money = JSON.parse(localStorage.getItem('money'));
+  const money = JSON.parse(localStorage.getItem('money')) || "";
   const [usd, setUsd] = useState(money.UsdBalance);
   const [eur, setEur] = useState(money.EurBalance);
   const [xaf, setXaf] = useState(money.XafBalance);
@@ -67,15 +67,15 @@ export default function DashBoard () {
       }
     }
   }
-
+  // select tag for 1st currency 'from'
   const handleChange1 = (money1) => {
     setCurrency1(money1.target.value);
   }
-
+  // select tag for 2nd currency "to"
   const handleChange2 = (money2) => {
     setCurrency2(money2.target.value);
   }
-
+  // select tag for totalised value
   const handleChange3 = (money3) => {
     setTotalValue(money3.target.value);
   }
@@ -127,6 +127,7 @@ export default function DashBoard () {
             <h3>Convert your currency</h3>
             <div className="convert-currency">
               <p>From</p>
+              {/* 1st select tag. currency from*/}
               <select onChange={handleChange1}>
                 <option disabled selected value>select currency</option>
                 <option>USD</option>
@@ -134,6 +135,7 @@ export default function DashBoard () {
                 <option>XAF</option>
               </select>
               <p>To</p>
+              {/* 2st select tag. currency to*/}
               <select onChange={handleChange2}>
                 <option disabled selected value>select currency</option>
                 <option>USD</option>

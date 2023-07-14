@@ -23,7 +23,7 @@ export default function EditAccount() {
         initialValues={{
           UsdBalance: "",
           EurBalance: "",
-          XafBalance: "",
+          XafBalance: ""
         }}
         validationSchema={Yup.object({
           UsdBalance: Yup.number()
