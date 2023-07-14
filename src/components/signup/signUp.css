@@ -1,0 +1,45 @@
+.backgroundStyle {
+  margin-top: 50px;
+  width: 70%;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 2px 4px 8px #535151c0;
+}
+
+.please {
+  font-style: italic;
+}
+
+.mystyle {
+  border: 1px solid #000;
+  padding: 10px;
+  border: none;
+  /* align-items: flex-start; */
+  text-align: start;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}
+
+.text-input {
+  padding: 5px;
+}
+
+.submit {
+  width: 80px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 8px auto;
+  border: none;
+  background: #0af030b7;
+}

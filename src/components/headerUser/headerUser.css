@@ -1,0 +1,52 @@
+.headers {
+  padding: 0;
+  background-color: red;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(115deg, #ffffffaf, #f1f1f1e3) ,url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1NClgRJCW3nlXPTtmnLZRM6BbBee5CcxeyKZrcqlUn8DLawwa-sa4Setm4bGJwWvrEo&usqp=CAU');
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 100px;
+}
+
+.p-tags:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.user {
+  font-style: italic;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 15px !important;
+  border-radius: 5px;
+  background: #0af030b7;
+}
+
+.icon-fi:hover {
+  transform: translateY(2px);
+}
+
+.icon-fi {
+  cursor: pointer;
+  margin: auto 0;
+  font-size: 25px;
+}
