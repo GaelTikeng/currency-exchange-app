@@ -104,11 +104,7 @@ a {
   .hero {
     width: 96vw;
   }
-
-  * {
-    border: 1px solid red;
-  }
-
+  
   .image {
     display: none;
   }
