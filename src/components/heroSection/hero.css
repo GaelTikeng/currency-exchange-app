@@ -13,7 +13,7 @@
 }
 
 .items {
-  width: 500%;
+  width: 100%;
 }
 
 .first-text {
@@ -116,11 +116,25 @@ a {
     margin: 0;
     font-weight: 600;
     font-size: 24px;
-    text-align: center;
+    text-align: start;
   }
 
   .p-tag {
-    text-align: center;
-    width: 96vw;
+    text-align: start;
+    width: 94%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .two-bottons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .botton-learn-more {
+    margin: 0;
   }
 }
