@@ -103,7 +103,10 @@ a {
 @media screen and (max-width: 768px) {
   .hero {
     width: 96vw;
-    
+  }
+
+  * {
+    border: 1px solid red;
   }
 
   .image {
