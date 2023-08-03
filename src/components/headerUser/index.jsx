@@ -21,9 +21,9 @@ export default function UserHeader () {
     <div className="headers">
       <h2 className="logo">C-exchange</h2>
       <div className="info">
-        <p className="p-tags">About</p>
-        <p className="p-tags">Market</p>
-        <p className="p-tags">Contact</p>
+        <p className="p-tags about">About</p>
+        <p className="p-tags market">Market</p>
+        <p className="p-tags contact">Contact</p>
         <p className="user">{userInfo.firstName} </p>
         <FiLogOut
           className="icon-fi"

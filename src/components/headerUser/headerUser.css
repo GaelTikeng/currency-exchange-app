@@ -58,7 +58,9 @@
     width: 100%;
   }
 
-  .p-tags {
+  .about,
+  .market,
+  .contact {
     display: none;
   }
 }
