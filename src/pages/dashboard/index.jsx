@@ -150,7 +150,7 @@ export default function DashBoard () {
             </button>
           </div>
           <h3>
-            Totalised values in
+            Totalised amount in
             <br></br>
             <select onChange={handleChange3}>
               <option disabled selected value>select currency</option>
