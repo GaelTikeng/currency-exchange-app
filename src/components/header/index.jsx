@@ -18,11 +18,11 @@ export default function Header () {
 
   return (
     <div className="header">
-      <h2 className="logo">C- exchange</h2>
+      <h2 className="logo">C-exchange</h2>
       <div className="info">
-        <p className="p-tags">About</p>
-        <p className="p-tags">Market</p>
-        <p className="p-tags">Contact</p>
+        <p className="p-tags about">About</p>
+        <p className="p-tags market">Market</p>
+        <p className="p-tags contact">Contact</p>
         {isOpen && <Popup
           content = {<>
             <LoginForm />

@@ -1,5 +1,4 @@
 .all-section {
-  
   font-family: 'Poppins', sans-serif;
 }
 
@@ -24,7 +23,6 @@
   margin-left: 100px;
   line-height: 1.5;
   font-weight: 600;
-  
 }
 
 .p-tag {
@@ -46,14 +44,14 @@
   border: none;
   border-radius: 5px;
   display: flex;
-  font-size: 23px; 
+  font-size: 18px; 
   background-color: #0af030b7;
 }
 
 .botton-learn-more {
   padding: 15px 30px;
   margin-left: 20px;
-  font-size: 23px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -106,5 +104,23 @@ a {
   .hero {
     width: 96vw;
     
+  }
+
+  .image {
+    display: none;
+  }
+
+  .first-text {
+    width: 96vw;
+    padding: 20px 0px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .p-tag {
+    text-align: center;
+    width: 96vw;
   }
 }
