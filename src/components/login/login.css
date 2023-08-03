@@ -22,3 +22,9 @@
 .input {
   padding: 8px;
 }
+
+@media screen and (max-width: 600px) {
+  .first-container {
+    width: 95%;
+  }
+}

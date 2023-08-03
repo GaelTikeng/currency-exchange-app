@@ -124,48 +124,48 @@ export default function DashBoard () {
           </button>
         </div>
         <div>
-            <h3>Convert your currency</h3>
-            <div className="convert-currency">
-              <p>From</p>
-              {/* 1st select tag. currency from*/}
-              <select onChange={handleChange1}>
-                <option disabled selected value>select currency</option>
-                <option>USD</option>
-                <option>EUR</option>
-                <option>XAF</option>
-              </select>
-              <p>To</p>
-              {/* 2st select tag. currency to*/}
-              <select onChange={handleChange2}>
-                <option disabled selected value>select currency</option>
-                <option>USD</option>
-                <option>EUR</option>
-                <option>XAF</option>
-              </select>
-              <button
-                className="convert"
-                onClick={handleConvert}
-                >
-                Convert
-              </button>
-            </div>
-            <h3>
-              Totalised values in
-              <br></br>
-              <select onChange={handleChange3}>
-                <option disabled selected value>select currency</option>
-                <option>USD</option>
-                <option>EUR</option>
-                <option>XAF</option>
-              </select>
-            </h3>
+          <h3>Convert your currency</h3>
+          <div className="convert-currency">
+            <p>From</p>
+            {/* 1st select tag. currency from*/}
+            <select onChange={handleChange1}>
+              <option disabled selected value>select currency</option>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>XAF</option>
+            </select>
+            <p>To</p>
+            {/* 2st select tag. currency to*/}
+            <select onChange={handleChange2}>
+              <option disabled selected value>select currency</option>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>XAF</option>
+            </select>
             <button
-              className="chf"
-              onClick={handleTotalValue}
-            >
-              Calculate
+              className="convert"
+              onClick={handleConvert}
+              >
+              Convert
             </button>
           </div>
+          <h3>
+            Totalised values in
+            <br></br>
+            <select onChange={handleChange3}>
+              <option disabled selected value>select currency</option>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>XAF</option>
+            </select>
+          </h3>
+          <button
+            className="chf"
+            onClick={handleTotalValue}
+          >
+            Calculate
+          </button>
+        </div>
       </div>
     </div>
   );

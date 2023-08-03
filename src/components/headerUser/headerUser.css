@@ -50,3 +50,15 @@
   margin: auto 0;
   font-size: 25px;
 }
+
+@media screen and (max-width: 600px) {
+  .headers {
+    padding: 0 10px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .p-tags {
+    display: none;
+  }
+}

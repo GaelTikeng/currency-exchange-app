@@ -19,7 +19,7 @@ export default function UserHeader () {
 
   return (
     <div className="headers">
-      <h2 className="logo">Cexchange</h2>
+      <h2 className="logo">C-exchange</h2>
       <div className="info">
         <p className="p-tags">About</p>
         <p className="p-tags">Market</p>
@@ -29,12 +29,6 @@ export default function UserHeader () {
           className="icon-fi"
           onClick={handleClick}
         />
-        {/* <button
-          className="btn"
-          onClick={handleClick}
-        >
-          Logout
-        </button> */}
       </div>
     </div>
   )
